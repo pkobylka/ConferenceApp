@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;1,100&display=swap');
+
+*{margin: 0 0 0 0; padding: 0; font-family: Exo, Calibri; box-sizing: border-box;}
+
+body{background-color: LightGrey;}
+.main{max-width: 100%; margin: 0 auto 0 auto; background-color: GhostWhite;}
+
+.head{position: relative;}
+.headpic{width: 100%; position:relative; display:block;}
+
+
+nav {}
+a.menu{ display: block; width: 25%; float: left; color: black; text-align:center; text-decoration: none; background-color: #972312; padding: 10px 20px;}
+a.menu:hover{color: #293752;}
+.active{ display: block; width: 25%; float: left; color: black; text-align:center; text-decoration: none; background-color: #962312; padding: 10px 20px;}
+
+article{margin-top: 30px; margin-bottom: 20px;}
+article h1{font-size: 30px; text-align: center; margin: 0 30% 20px 30%; padding-bottom: 15px; border-bottom: 2px solid LightSlateGrey;}
+article p{text-align: justify; margin: 10px; line-height: 25px; font-size: 15px; font-weight: bold;}
+img.team{float: left; margin: 0px 10px 10% 10px; width: 50%; border-radius: 50% 10%; border: 2px solid LightSlateGrey; }
+.iframeyt{width:100%;}
+
+/* Tutaj zaczyna się sekcja odpowiadająca za prelegentów */
+
+/* Tutaj kończy się sekcja odpowiadająca za prelegentów */
+
+/* Sekcja odpowiadająca za tabelke*/
+
+/* Koniec sekcji odpowiwedzialnej za tabelke */
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.headpic {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.logopic {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .70);
+    top: 20px;
+    left: 20px;
+    width: 15%;
+}
+
+.footer{
+    border-top: 2px solid LightSlateGrey;
+    background-color: GhostWhite;
+    padding: 30px 0;
+}
+
+
+/*ustawienia ikon*/
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+}
+
+.container{
+    max-width: 1000px;
+    margin:auto;
+}
+/*konter na kolumny które są w stopce nasza firma follow us itd itp*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*lista podstron ze stopki, nie ma tych kropek na początku dzieki temu*/
+ul{
+    list-style: none;
+}
+
+/*kolumny*/
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+
+/*czczionka headerow w stopce*/
+.footer-col h4{
+    font-size: 18px;
+    color: SlateGray;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+/*ustawienia kreski i pozycja napisów*/
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: LightSlateGrey;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+/*Ustawienia napisów w stopce*/
+.footer-col ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff; /*kolor czcionki napisaów po animacji*/
+    text-decoration: none;
+    font-weight: 300;
+    color: DarkBlue; /*kolor czcionki napisaów przed animacji*/
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Efekt który powoduje ze ikonki social zmieniają opacity */
+.fa:hover {opacity: 0.7;}
+
+/*wlasciwosc odpowiadająca za odstęp między napisami w stopce, not last child wszystkie ul li oprócz ostatniego bedą miały daną ceche*/
+.footer-col ul li:not(:last-child){margin-bottom: 10px;}
+
+/*efekt który odpowiada za zmiane koloru napisów w stopce*/
+.footer-col ul li a:hover{color: #181818; padding-left: 8px;}
+
+/*wlasciwosc która odpowiada za rozmiar img loga*/
+.footerlogo{width:220%;}
+
+/*----------------KONTAKT---------------------------*/
+input[type=text], select, textarea {
+    font-weight: 600;
+    width: 100%;
+    padding: 12px; /* szerokosć kienek tekstowych*/
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* zaokrąglenia */
+    box-sizing: border-box; /* trzyma wszystko na miejscu*/
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical /*resizuje okienko przy zmniejszaniu strony tylko verti */
+}
+
+/* kosmetyka buttonu */
+input[type=submit] {
+    background-color: LightSlateGrey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=button]:hover {opacity: 0.7;}
+
+/* marginesy i color dookoła formy, kosmetyka*/
+.container {
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.h1_kontakt{
+    font-size: 30px;
+    text-align: center;
+    margin: 0 30% 20px 30%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid LightSlateGrey;
+}
+
+/*----------------KONTAKT---------------------------*/
+/*----------------COOKIE----------------------------*/
+
+
+p {
+    margin: 24px 0;
+    line-height: 2;
+}
+
+
+.cookiediv {
+    min-width:280px;
+    position: fixed;
+    bottom: -100%;
+    left: 1%;
+    right: 0;
+    background: #2f3640;
+    color: #f5f6fa;
+    padding: 0 32px;
+    box-shadow: 12px -6px 16px rgba(47, 54, 64, 0.39);
+    transition: 600ms;/*---------------czas w jakim się wysuwa-------*/
+
+}
+
+.cookiediv.active {
+    bottom: 0;
+}
+
+.cookiediv a {
+    color: #f5f6fa;
+    text-decoration: underline;
+}
+
+.buttonAkceptuj {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buttonAkceptuj:hover {opacity: 0.7;}
+
+.buttonAnuluj {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buttonAnuluj:hover {opacity: 0.7;}
+/*----------------COOKIE----------------------------*/
+/*----------------O NAS-----------------------------*/
+.ponas{
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+    margin: 10px; line-height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* odpowiada za 4 kolumny w których są zdjęcia */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* odpowiada za styl przed najechaniem na obrazek */
+.column img {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* odpowiada za ustawieni tego co jest za kolumnami */
+.row_aboutus:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* x w prawym górnym rogu */
+.container_extphoto {
+    position: relative;
+    display: none;
+}
+
+
+/* ustawienia samego krzyżyka*/
+.xButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*------------------------------POLITYKI-------------------------*/
+.pPolityki{text-align: justify; padding: 0px 15px 0px 15px; font-weight: 600;}
+/*------------------------------POLITYKI-------------------------*/
+
+
+/*------------------------------TRASY----------------------------*/
+
+.child{padding: 15px;}
+.parent{display:flex;}
+/*------------------------------TRASY----------------------------*/
+
+/*------------------------------ZMIANA JĘZYKA OKODOWAĆ!!!!-------*/
+
+
+/*------------------------------USUNĄĆ-------*/
+
+.lang {
+    width: 100px;
+}
+
+.lang img {
+    width: 100px;
+
+}
+/*------------------------------USUNĄC-------*/
+
+/*---------------Menu co się wysuwa-------*/
+
+.lang-menu {
+    z-index: 1;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 0px;/*-------------ta przerwa między na górze od flagi !@&*!!@#----*/
+    position: relative;
+}
+
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+    line-height: 2;
+    cursor: pointer;
+}
+/*---------------właściwości flagi po wczytaniu strony-------*/
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/PL/shiny/64.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*---------------Menu co się wysuwa ustawienia ramki-------*/
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 30px;
+    right: 5px; /*---------------pozycja tej ramki co się wysuwa-------*/
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+/*-----------cześć odpowidzialna za pokazanie się flag w menu-----------*/
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pl:before {
+    background-image: url(https://www.countryflags.io/PL/shiny/64.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/GB/shiny/64.png);
+}
+
+/*---------------po najechaniu myszką pozwala się wysunąć liście-------*/
+.lang-menu:hover ul {
+    display: block;
+}

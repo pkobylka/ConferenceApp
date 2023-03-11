@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="pl">
+<head>
+    <title>Projekt TI</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
+</head>
+<body onload="cookies()">
+<div class="main">
+    <header class="head">
+            <div class="lang-menu">
+                <div class="selected-lang">
+                    Polski
+                </div>
+                <ul>
+                    <li>
+                        <a title="Język Polski" href="easteregg.html" class="pl">Polski</a>
+                    </li>
+                    <li>
+                        <a title="Język Angielski" href="easteregg.html" class="en">English</a>
+                    </li>
+                </ul>
+            </div>
+        <div class="parent">
+            <img src="/static/images/head_photo.png" class="headpic" alt="pwr_photo">
+            <img src="/static/images/pwr_logo_bg.png" class="logopic" alt="logo_photo">
+        </div>
+
+        <nav>
+            <a title="Strona Główna" class="active" href="index.html">Prelegenci</a>
+            <a title="Mapa kampusu" class="menu" href="O nas.html">Mapa kampusu</a>
+            <a title="Zapisy" class="menu" href="informacje.html">Zapisy</a>
+            <a title="Kontakt" class="menu" href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <h1>12 Koferencja Politechniki Wrocławskiej nt. Fizyki Kwantowej!</h1>
+            <p>Politechnika Wrocławska ma zaszczyt zaprosić wszystkich miłośników fizyki kwantowej na konferencję "Przygoda z kwantami", która odbędzie się w maju 2023 roku.
+
+                <p>Konferencja będzie składać się z różnych wykładów prowadzonych przez światowej klasy naukowców i badaczy z dziedziny fizyki kwantowej. Będą one skupiać się na najnowszych odkryciach w tej dziedzinie oraz na praktycznych zastosowaniach teorii kwantowej w dziedzinach takich jak informatyka kwantowa, optyka kwantowa, fizyka atomowa i molekularna oraz fizyka ciała stałego.</p>
+
+                <p>Podczas konferencji uczestnicy będą mieli również okazję wziąć udział w warsztatach, które pomogą im pogłębić swoją wiedzę na temat fizyki kwantowej. Będą to praktyczne zajęcia związane z zastosowaniem teorii kwantowej w inżynierii oraz naukach przyrodniczych.</p>
+
+                <p>Konferencja "Przygoda z kwantami" jest doskonałą okazją dla naukowców, badaczy oraz studentów zainteresowanych fizyką kwantową, aby spotkać się i wymienić swoimi doświadczeniami oraz poznać najnowsze trendy w tej dziedzinie. Przestrzeń konferencyjna na Politechnice Wrocławskiej zapewni idealne warunki do nauki, a również miło spędzenia czasu wśród innych pasjonatów fizyki kwantowej.</p>
+       </article>
+        <div class="content">
+            <div class="prelegenci">
+                <h2>NAsi Prelegenci</h2>
+                <div class="swiper mySwiper container">
+                    <div class="swiper-wrapper content">
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img1.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Marcelina Sobczak</span>
+                                    <span class="university">Politechnika Wrocławska</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img2.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Kamila Jakaśtam</span>
+                                    <span class="university">Cambridż University</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img3.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Kamila Jakaśtam</span>
+                                    <span class="university">Cambridż University</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img4.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Kamila Jakaśtam</span>
+                                    <span class="university">Cambridż University</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img2.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Kamila Jakaśtam</span>
+                                    <span class="university">Cambridż University</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img2.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Kamila Jakaśtam</span>
+                                    <span class="university">Cambridż University</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img2.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Kamila Jakaśtam</span>
+                                    <span class="university">Cambridż University</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="/static/images/speakers/img2.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+
+                                <div class="name-uni">
+                                    <span class="name">Kamila Jakaśtam</span>
+                                    <span class="university">Cambridż University</span>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Temat prelekcji</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="wazne-daty">
+                <h2>Ważne daty</h2>
+                <table>
+                    <tr>
+                        <th>Wydarzenie</th>
+                        <th>Miejsce</th>
+                        <th>Data</th>
+                    </tr>
+                    <tr>
+                        <td>Zapisy</td>
+                        <td>D-13</td>
+                        <td>19.04.2023, godz. 08:55</td>
+                    </tr>
+                    <tr>
+                        <td>Pierwsza Konferencja</td>
+                        <td>D-1</td>
+                        <td>20.04.2023, godz. 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Druga Konferencja</td>
+                        <td>Hala Stulecia</td>
+                        <td>21.04.2023, godz. 05:00</td>
+                    </tr>
+                    <tr>
+                        <td>Trzecia Konferencja</td>
+                        <td>W-12</td>
+                        <td>34.04.2023, godz. 17:00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+<!--        <iframe class="iframeyt" width="900" height="466" src="https://www.youtube.com/embed/BiNQB4f_6eY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Nasza Firma</h4>
+                    <ul>
+                        <li><a title="Oddziały" href="easteregg.html">Oddziały - Pusta</a></li>
+                        <li><a title="Polityka" href="polityka.html">Polityka Firmy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dołącz do nas!</h4>
+                    <div class="social-links">
+                        <a title="Social_Media" href="https://pl-pl.facebook.com/" class="fa fa-facebook"></a>
+                        <a title="Social_Media" href="https://twitter.com/?lang=pl" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+                <div> class="footer-col">
+                    <a href="index.html"></a>
+                        <img class="footerlogo" href="index.html" src="images/logo_footer.png"  alt="logo" >
+                </div>
+            </div>
+            <!-- fragment odnośnie plików cookies-->
+            <div class="cookiediv">
+                <a href="#"></a><h1>Cookies!</h1>
+                <p>
+                    </a>Ta strona używa ciasteczek, kliknij "OK" aby dać nam zgodę na handel Twoimi organami wewnętrznymi. Aby przejśc do strony kliknij ten drugi przycisk. Dowiedz się więcej na temat naszej <a href="polityka.html">polityki prywatności!.</a>
+                </p>
+                <button class="buttonAkceptuj">Ok</button>
+                <button class="buttonAnuluj"  >Akceptuje Cookies!</button>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="/static/scripts.js"></script>
+</body>
+</html>
+
